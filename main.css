@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #F2AF36;
+  background-image: url(dot.svg);
+  background-repeat: repeat;
+  /*border: 10px #fff solid;*/
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  min-height: 70vh;
+  min-width: 70%;
+  background-color: #fff;
+  position: absolute;
+  padding: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1 {
+  font-family: Helvetica-Bold, "proxima-nova", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 30px;
+  color: #F2AF36;
+  margin: 10px 0 15px 0;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: Helvetica-Bold, "proxima-nova", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  margin: 10px 0 15px 0;
+  color: rgb(113,113,112);
+}
+
+.btn {
+  color: #fff;
+  padding: 10px 16px 10px 16px;
+  margin: 10px;
+  text-transform: capitalize;
+  font-family: Helvetica, Roboto, Arial, sans-serif;
+}
+
+.btn:hover {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#btn1 {
+  background-color: #005291;
+}
+
+#btn2 {
+  background-color: #D72331;
+}
+
+#btn3 {
+  background-color: #008B47;
+}
+
+.results {
+  font-size: 22px;
+  font-family: Helvetica-Bold, "proxima-nova", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+#meso_percentage {
+  color: #D72331;
+  display: none;
+}
+
+#endo_percentage {
+  color: #008B47;
+  display: none;
+}
+
+#ecto_percentage {
+  color: #005291;
+  display: none;
+}
+
+#link {
+  display: none;
+  font-size: 22px;
+  font-family: Helvetica-Bold, "proxima-nova", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  color: #F2AF36;
+  margin: 10px 0 15px 0;
+}
