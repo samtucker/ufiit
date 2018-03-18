@@ -1,4 +1,4 @@
-var questions = ["Are your shoulders:", "Do you gain weight easily?", "Do you gain muscle easily?", "Do people call you athletic even if you aren't being very active?", "Do people describe you as strong?", "Do people describe you as slender or skinny?", "How would you describe your metabolism?", "How would you describe your muscle mass?"];
+var questions = ["Are your shoulders:", "Do you gain weight easily?", "Do you gain muscle easily?", "Do people call you athletic even if you aren't being very active?", "Do people describe you as strong?", "Do people describe you as slender/slim?", "How would you describe your metabolism?", "How would you describe your muscle mass?"];
 var answers = [
   ["Wider than your hips.", "Same width as your hips.", "Narrower than your hips."],
   ["Yes", "No"],
@@ -21,7 +21,7 @@ var answersBodyType = [
   [mesomorph, endomorph + ectomorph],
   [(endomorph + mesomorph), ectomorph],
   [ectomorph, (mesomorph + endomorph)],
-  [endomorph, ectomorph, mesomorph, 0], 
+  [endomorph, ectomorph, mesomorph, 0],
   [(ectomorph + mesomorph), endomorph]
 ];
 
