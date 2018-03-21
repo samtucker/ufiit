@@ -38,13 +38,14 @@ h1 {
 h2 {
   font-size: 24px;
   font-family: Helvetica-Bold, "proxima-nova", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  margin: 10px 0 15px 0;
+  margin: 10px 0 25px 0;
   color: rgb(113,113,112);
+
 }
 
 .btn {
   color: #fff;
-  padding: 10px 16px 10px 16px;
+  padding: 10px 25px 10px 25px;
   margin: 10px;
   text-transform: capitalize;
   font-family: Helvetica, Roboto, Arial, sans-serif;
@@ -64,6 +65,13 @@ h2 {
 
 #btn3 {
   background-color: #008B47;
+}
+
+.answer_button_box {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .results {
