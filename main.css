@@ -55,16 +55,23 @@ h2 {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
+#current_question {
+  display: none;
+}
+
 #btn1 {
   background-color: #005291;
+  display: none;
 }
 
 #btn2 {
   background-color: #D72331;
+  display: none;
 }
 
 #btn3 {
   background-color: #008B47;
+  display: none;
 }
 
 .answer_button_box {
@@ -100,4 +107,20 @@ h2 {
   font-family: Helvetica-Bold, "proxima-nova", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   color: #F2AF36;
   margin: 10px 0 15px 0;
+}
+
+.btn_4 {
+  background-color: rgb(236, 9, 40);
+  text-transform: capitalize;
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 8px 6px 8px;
+  font-weight: normal;
+  z-index: 10;
+  font-family: Helvetica-Bold, "proxima-nova", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+.input_home input {
+  width: 220px;
+  padding: 8px;
 }

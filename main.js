@@ -33,6 +33,13 @@ var questionNumber = -1;
 
 function play() {
   nextQuestion();
+  document.getElementById('btn1').style.display = "block";
+  document.getElementById('btn2').style.display = "block";
+  document.getElementById('btn3').style.display = "block";
+  document.getElementById('current_question').style.display = "block";
+  document.getElementById('inputs').style.display = "none";
+  document.getElementById('inputs1').style.display = "none";
+  document.getElementById('inputs3').style.display = "none";
 }
 
 function answerOptionCalc(calc) {
@@ -103,13 +110,21 @@ function calculateBodyType() {
   endoPecentage = calculateBodyPercentage(endoScore, totalPoints);
   ectoPecentage = calculateBodyPercentage(ectoScore, totalPoints);
   mesoPecentage = calculateBodyPercentage(mesoScore, totalPoints);
-  document.getElementById('endo_percentage').style.display = "block";
-  document.getElementById('ecto_percentage').style.display = "block";
-  document.getElementById('meso_percentage').style.display = "block";
+  if (endoPecentage > ectoPecentage && endoPecentage > mesoPecentage) {
+    document.getElementById('result').innerHTML = "You are an Endomorph!";
+    document.getElementById('result').style.color = "#008B47";
+  } else if (ectoPecentage > endoPecentage && ectoPecentage > mesoPecentage) {
+    document.getElementById('result').innerHTML = "You are an Ectopmorph!";
+    document.getElementById('result').style.color = "#005291";
+  } else {
+    document.getElementById('result').innerHTML = "You are a Mesomorph!";
+    document.getElementById('result').style.color = "#D72331";
+  }
   document.getElementById('link').style.display = "block";
-  document.getElementById('endo_percentage').innerHTML = "You are " + endoPecentage.toFixed(0) + "% " + "Endomorph";
-  document.getElementById('ecto_percentage').innerHTML = "You are " + ectoPecentage.toFixed(0) + "% " + "Ectopmorph";
-  document.getElementById('meso_percentage').innerHTML = "You are " + mesoPecentage.toFixed(0) + "% " + "Mesomorph";
+  document.getElementById('result').style.display = "block";
+  // document.getElementById('endo_percentage').innerHTML = "You are " + endoPecentage.toFixed(0) + "% " + "Endomorph";
+  // document.getElementById('ecto_percentage').innerHTML = "You are " + ectoPecentage.toFixed(0) + "% " + "Ectopmorph";
+  // document.getElementById('meso_percentage').innerHTML = "You are " + mesoPecentage.toFixed(0) + "% " + "Mesomorph";
 }
 
 function calculateBodyPercentage(body, total) {
